@@ -1,0 +1,308 @@
+/* Silver, White, and Pink color scheme */
+.info-bar {
+  background-color: #f0f0f0; /* Light Silver background for a soft feel */
+  color: #ff85b3; /* Soft Pink for text color */
+  padding: 10px 0;
+  font-size: 17px;
+  
+}
+
+.info-bar-text {
+  font-size: 1.1rem;
+  color: #ff85b3; /* Soft Pink for emphasis */
+}
+
+.info-bar-icons a {
+  margin: 0 10px;
+  color: #ff85b3; /* Pink for icons */
+  font-size: 1.2rem;
+  transition: color 0.3s ease; /* Smooth hover transition */
+}
+
+.info-bar-icons a:hover {
+  color: #808080; /* Medium Silver hover effect for icons */
+}
+
+/* Subtle border to give the bar a structured look */
+.info-bar {
+  border-bottom: 2px solid #d3d3d3; /* Light Silver border */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1199.98px) { /* XL */
+  .info-bar {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 991.98px) { /* LG */
+  .info-bar-text,
+  .info-bar-icons a {
+    font-size: 1rem;
+    
+  }
+  .info-bar {
+    display: none; /* Hide InfoBar on mobile/tablet screens */
+  }
+}
+
+@media (max-width: 767.98px) { /* MD */
+  .info-bar-text,
+  .info-bar-icons a {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 575.98px) { /* SM */
+  .info-bar {
+    padding: 5px 0;
+  }
+  .info-bar-text {
+    font-size: 0.9rem;
+  }
+  .info-bar-icons a {
+    font-size: 0.9rem;
+    margin: 0 5px;
+  }
+}
+
+.nav-links a.active {
+  color: #ff85b3; /* Change the text color of the active link */
+  font-weight: bold; /* Make it bold if desired */
+}
+
+@media (max-width: 375px) { /* XS */
+  .info-bar {
+    font-size: 0.85rem;
+    padding: 4px 0;
+  }
+  .info-bar-text {
+    font-size: 0.85rem;
+  }
+  .info-bar-icons a {
+    font-size: 0.85rem;
+    margin: 0 4px;
+  }
+}
+
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px; /* Default padding */
+  height: auto;
+  background-color: #f0f0f0; /* Light Silver background */
+  font-family: Arial, sans-serif;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+/* Logo Section */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  width: 75px; /* Decrease logo size for smaller screens */
+  height: 60px 0px;
+  margin-right: 8px;
+  top: -0.5em;
+  position: relative;
+}
+
+.logo-text h2 {
+  font-size: 1.1rem; /* Decrease heading size for smaller screens */
+  font-weight: 700;
+  color: #ff85b3; /* Soft Pink for the name */
+}
+
+.logo-text p {
+  font-size: 0.8rem;
+  font-weight: 700; /* Decrease paragraph size for smaller screens */
+  color: #808080; /* Medium Silver for subtitle */
+}
+
+/* Center the Nav Links */
+.nav-links {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  padding-top: 10px;
+  transition: max-height 0.3s ease;
+  overflow: hidden; /* Hide overflow when the menu is closed */
+}
+
+
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.nav-links .active {
+  color: #ff85b3; /* Soft Pink for active link */
+}
+
+/* Hamburger Menu Icon */
+.hamburger {
+  display: none; /* Hidden by default, will be shown in smaller screens */
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.line {
+  height: 3px;
+  width: 25px;
+  background-color: #333;
+  margin: 3px 0;
+}
+
+/* Appointment Button */
+.appointment-btn {
+  padding: 8px 15px;
+  background-color: #ff85b3; /* Soft Pink background */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.appointment-btn:hover {
+  background-color: #e0739f; /* Slightly darker pink */
+  transform: scale(1.05); /* Pop effect */
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+  .navbar {
+    justify-content: space-between;
+    display: flex;
+    padding: 10px 20px; /* Decrease padding for smaller screens */
+  }
+  
+
+  .logo {
+    flex: 1; /* Allow logo section to take space */
+  }
+
+  .nav-links {
+    max-height: 0; /* Hide menu initially */
+    flex-direction: column;
+    width: 100%; /* Full width */
+    background-color: #f0f0f0; /* Match the navbar background */
+  }
+
+  .nav-links.show-menu {
+    max-height: 300px; /* Allow space for the menu items */
+  }
+
+  .hamburger {
+    display: flex; /* Show hamburger menu on small screens */
+  }
+
+  /* Hide Appointment Button on mobile and tablet */
+  .appointment-btn {
+    display: none; /* Hide the appointment button */
+  }
+}
+
+/* For larger screens */
+@media (min-width: 768px) {
+  .nav-links {
+    max-height: none; /* Keep the menu expanded */
+    flex-direction: row; /* Align menu items in a row */
+  }
+
+  .hamburger {
+    display: none; /* Hide hamburger menu on larger screens */
+  }
+
+  .navbar {
+    justify-content: space-between; /* Space between elements */
+  }
+}
+
+.social-media-icons {
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  padding: 1rem 7rem; /* Add some padding around */
+}
+
+.social-media-icons a {
+  margin: 5px 0; /* Adjust spacing between icons */
+  color: #ff85b3; /* Match icon color with the rest */
+  transition: color 0.3s ease; /* Smooth hover transition */
+}
+
+.social-media-icons a:hover {
+  color: #808080; /* Medium Silver hover effect for icons */
+}
+
+
+/* Fixed Navbar Styling */
+.fixed-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow when fixed */
+}
+
+.info-bar.hidden {
+  display: none; /* Hide the info bar when scrolled */
+}
+
+/* Adjust the top margin for the navbar so it does not overlap content when fixed */
+.content {
+  margin-top: 100px; /* Adjust as needed based on navbar height */
+}
+/* Fixed Navbar Styling for larger screens */
+@media (min-width: 992px) {
+  .fixed-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow when fixed */
+  }
+
+  /* Adjust the top margin for the content when navbar is fixed */
+  .content {
+    margin-top: 100px; /* Adjust as needed based on navbar height */
+  }
+}
+
+/* Navbar styling for smaller screens (tablet and mobile) */
+@media (max-width: 991.98px) {
+  .navbar {
+    position: static; /* Remove fixed positioning */
+    box-shadow: none; /* Remove shadow when not fixed */
+  }
+
+  .content {
+    margin-top: 0; /* Remove additional margin */
+  }
+}
