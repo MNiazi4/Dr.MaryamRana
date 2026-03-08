@@ -1,6 +1,6 @@
 // WhatsAppWidget.jsx
 import React from "react";
-import "./WhatsApp.css"; // Import the CSS
+import "./Whatsapp.css"; // Import the CSS
 
 const WhatsAppWidget = () => {
   return (
