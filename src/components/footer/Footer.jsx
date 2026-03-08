@@ -1,5 +1,5 @@
 import React from "react";
-import "./footer.css";
+import "./Footer.css";
 
 const Footer = () => {
   return (
@@ -16,7 +16,7 @@ const Footer = () => {
             <a href="https://maps.app.goo.gl/fBF4JVawXpUw8A6h7" target="_blank" rel="noopener noreferrer">
               <i className="fa-solid fa-location-dot"></i> H897+X5V Chowk, Nila Gumbad Rd,<br /> Neela Gumbad Lahore
             </a>
-          </p>  
+          </p>
           <p>
             <a href="tel:03450048535">
               <i className="fas fa-phone"></i> 03450048535, 0321-1162036
