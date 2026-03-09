@@ -7,10 +7,10 @@ import "./Home.css"; // Import the CSS file
 
 const Home = () => {
   const images = [
-    "./src/assets/homepics/1.jpg",
-    "./src/assets/homepics/2.jpg",
-    "./src/assets/homepics/3.jpg",
-    "./src/assets/homepics/4.jpg",
+    "/assets/homepics/1.jpg",
+    "/assets/homepics/2.jpg",
+    "/assets/homepics/3.jpg",
+    "/assets/homepics/4.jpg",
   ];
 
   const settings = {
@@ -43,7 +43,7 @@ const Home = () => {
       {/* Doctor Profile Section */}
       <div className="doctor-profile">
         <img
-          src="./src/assets/homepics/hero-1.png" // Replace with the actual path of the image
+          src="/assets/homepics/hero-1.png" // Replace with the actual path of the image
           alt="Dr. maryam"
           className="doctor-image"
         />
@@ -77,37 +77,37 @@ const Home = () => {
       <div className="services-section">
   <div className="service-card">
     <div className="icon-circle">
-      <img src="./src/assets/homepics/disease1.png" alt="Female Fertility Health" />
+      <img src="/assets/homepics/disease1.png" alt="Female Fertility Health" />
     </div>
     <p className="service-title">Female Fertility Health</p>
   </div>
   <div className="service-card">
     <div className="icon-circle">
-      <img src="./src/assets/homepics/disease2.png" alt="Polycystic Ovarian Syndrome" />
+      <img src="/assets/homepics/disease2.png" alt="Polycystic Ovarian Syndrome" />
     </div>
     <p className="service-title">Polycystic Ovarian Syndrome</p>
   </div>
   <div className="service-card">
     <div className="icon-circle">
-      <img src="./src/assets/homepics/disease3.png" alt="Medical Disorder Pregnancy" />
+      <img src="/assets/homepics/disease3.png" alt="Medical Disorder Pregnancy" />
     </div>
     <p className="service-title">Medical Disorder Pregnancy</p>
   </div>
   <div className="service-card">
     <div className="icon-circle">
-      <img src="./src/assets/homepics/disease4.png" alt="Normal Vaginal Delivery" />
+      <img src="/assets/homepics/disease4.png" alt="Normal Vaginal Delivery" />
     </div>
     <p className="service-title">Normal Vaginal Delivery</p>
   </div>
   <div className="service-card">
     <div className="icon-circle">
-      <img src="./src/assets/homepics/disease5.png" alt="Antenatal / Postnatal Care" />
+      <img src="/assets/homepics/disease5.png" alt="Antenatal / Postnatal Care" />
     </div>
     <p className="service-title">Antenatal / Postnatal Care</p>
   </div>
   <div className="service-card">
     <div className="icon-circle">
-      <img src="./src/assets/homepics/disease6.png" alt="Recurrent Miscarriages" />
+      <img src="/assets/homepics/disease6.png" alt="Recurrent Miscarriages" />
     </div>
     <p className="service-title">Recurrent Miscarriages</p>
   </div>
@@ -137,7 +137,7 @@ const Home = () => {
                 <p className="review-date">9/10/2022</p>
               </div>
               <img
-                src="./src/assets/homepics/google-icon.png"
+                src="/assets/homepics/google-icon.png"
                 alt="Google"
                 className="google-icon"
               />
@@ -159,7 +159,7 @@ const Home = () => {
                 <p className="review-date">10/07/2022</p>
               </div>
               <img
-                src="./src/assets/homepics/google-icon.png"
+                src="/assets/homepics/google-icon.png"
                 alt="Google"
                 className="google-icon"
               />
@@ -179,7 +179,7 @@ const Home = () => {
                 <p className="review-date">03/04/2022</p>
               </div>
               <img
-                src="./src/assets/homepics/google-icon.png"
+                src="/assets/homepics/google-icon.png"
                 alt="Google"
                 className="google-icon"
               />
@@ -196,7 +196,7 @@ const Home = () => {
                 <p className="review-date">12/03/2023</p>
               </div>
               <img
-                src="./src/assets/homepics/google-icon.png"
+                src="/assets/homepics/google-icon.png"
                 alt="Google"
                 className="google-icon"
               />
@@ -220,7 +220,7 @@ const Home = () => {
         <div className="hospital-container">
           <div className="hospital-card">
             <img
-              src="./src/assets/homepics/idc.png"
+              src="/assets/homepics/idc.png"
               alt="idc"
               className="hospital-logo"
             />
@@ -238,7 +238,7 @@ const Home = () => {
 
           <div className="hospital-card">
             <img
-              src="./src/assets/homepics/ke.png"
+              src="/assets/homepics/ke.png"
               alt="university-king-edward"
               className="hospital-logo"
             />

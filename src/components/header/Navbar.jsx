@@ -97,7 +97,7 @@ const Navbar = () => {
         }`}
       >
         <div className="logo">
-          <img src="./src/assets/logo.png" alt="Logo" className="logo-img" />
+          <img src="/assets/logo.png" alt="Logo" className="logo-img" />
           <div className="logo-text">
             <h2>DR. Maryam Ranna</h2>
             <p>Assist. Professor (Obst & gynae)</p>

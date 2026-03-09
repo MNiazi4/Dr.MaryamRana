@@ -339,7 +339,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("./src/assets/homepics/pattern.svg"); /* Update with the correct path */
+  background-image: url("/assets/homepics/pattern.svg"); /* Update with the correct path */
   opacity: 0.2; /* Adjust transparency */
   z-index: 1;
 }
